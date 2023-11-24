@@ -1,0 +1,85 @@
+.storePreview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    width: 100%;
+    min-height: 70vh;
+    background-color: rgb(48, 48, 48);
+    padding: 2rem 0;
+}
+
+.imageHolder {
+    width: 100%;
+    height: 100%;
+    min-width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    position: relative;
+    border-radius: 10px;
+}
+
+.cost, .productName {
+    position: absolute;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+.cost {
+    top: 0;
+    right: 0;
+    background-color: rgb(32, 32, 32);
+}
+
+.productName {
+    bottom: 0;
+    left: 0;
+    background-color: rgb(32, 32, 32);
+}
+
+.storeItem {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.storeHolder {
+    width: 80%;
+    max-width: 300px;
+    height: calc(50% - 1rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    margin: 15px auto;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+.storeHolder:hover {
+    transform: scale(1.05);
+}
+
+.storeShowcase {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
